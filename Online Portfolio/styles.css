@@ -1,0 +1,123 @@
+/*
+  Unit 1 Project
+  [Project Name]: Styles
+*/
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+  h1 {
+    background:pink;
+    margin:0 9.2vw;
+    border:1px solid black;
+  }
+  body{
+    background: #99ffff;
+    text-align:center;
+    padding:20px;
+  }
+  header{
+    font-size:20px;
+    text-shadow:4px 4px 5px black;
+    color: white;
+    padding:20px;
+    
+  }
+  p {
+    color:black;
+    margin:12px;
+    font-size:20px;
+  }
+  article{
+    text-align:left;
+  }
+  h2 {
+    background-color: pink;
+    padding: 10px;
+    border:0px solid black;
+    margin-bottom: 15px;
+    
+  }
+  span{
+    font-weight:bold;
+  }
+  #row1{
+    display:flex;
+    margin:0px 10vw;
+  }
+  #row2{
+    display:flex;
+    margin:0px 10vw;
+  }
+  
+  #basic{
+    flex:1;
+    padding:10px;
+    border:1px solid black;
+    margin:5px;
+    background-color:white;
+    
+  }
+  #emoji{
+    font-size:200px ;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+  }
+  #skills{
+    flex:1;
+    padding:10px;
+    border:1px solid black;
+    margin:5px;
+    background-color:white;
+  }
+  #academic{
+    flex: 2; 
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: white; 
+  }
+  #hobbies{
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: white; 
+  }
+  #goals{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0 10.29vw;
+    background-color: white;
+  }
+  
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Button Styling */
+#darkModeToggle, #scrollToTop {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#scrollToTop {
+    right: 130px;
+    display: none;
+}
+
+#darkModeToggle:hover, #scrollToTop:hover {
+    background: #555;
+}

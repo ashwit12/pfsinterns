@@ -1,0 +1,122 @@
+/* General Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.calculator {
+    background: #2c3e50;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.display {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: right;
+    background-color: #34495e;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.screen:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px #3498db;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    padding: 20px;
+    font-size: 22px;
+    background-color: #4682b4; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1f3a5b; /* Dark Blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #1f3a5b;
+    transform: translateY(2px);
+}
+
+button.operator {
+    background-color: #f39c12; /* Orange for operators */
+}
+
+button.operator:hover {
+    background-color: #e67e22; /* Slightly darker shade for hover effect */
+}
+
+button.operator:active {
+    background-color: #e67e22; /* Same as hover effect on active */
+}
+
+button.equal {
+    background-color: #27ae60; /* Green for Equal */
+    grid-column: span 4;
+    transition: all 0.3s ease;
+}
+
+button.equal:hover {
+    background-color: #2ecc71;
+}
+
+button.equal:active {
+    background-color: #2ecc71;
+}
+
+button.clear {
+    background-color: #e74c3c; /* Red for clear */
+}
+
+button.clear:hover {
+    background-color: #c0392b;
+}
+
+button.clear:active {
+    background-color: #c0392b;
+}
+.screen.error {
+    color: red; 
+    background-color: #2c3e50;
+    border: 2px solid red; 
+}
